@@ -1,0 +1,13 @@
+Weight	Nested	Procedure	Electric	Heat	Pain	Word	ISI	Related
+1		TrialProc	none	none	low	bruise	2000	TRUE
+1		TrialProc	none	low	none	blanket	1500	TRUE
+1		TrialProc	none	none	high	chilli pepper	1000	TRUE
+1		TrialProc	low	none	none	tingle	1500	TRUE
+1		TrialProc	none	high	none	coffee	1500	TRUE
+1		TrialProc	high	none	none	startling	1000	TRUE
+1		TrialProc	high	none	none	attractive	2000	FALSE
+1		TrialProc	none	low	none	shock	1500	FALSE
+1		TrialProc	low	none	none	sky	1500	FALSE
+1		TrialProc	none	none	low	feather	1000	FALSE
+1		TrialProc	none	none	high	translating	2000	FALSE
+1		TrialProc	none	high	none	pleasant	1500	FALSE
