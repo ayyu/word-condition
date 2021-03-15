@@ -1,19 +1,35 @@
 # Word Condition Study
 
-There are two versions of the Encoding task script
-- **BNC**: NI-DAQ only, doesn't control temperatures from the script. The sequence of temperatures must be programmed on the QST TCS II. TTL pulses are sent from the NI-DAQ to trigger the QST/Digitimer.
-- **Serial**: NI-DAQ and USB to QST, sends temperatures directly from the script.
+Memory task. Presents words, either with sensations or for retrieval of past sensations.
 
 ## Usage
 
 Note that the practice experiments have been removed. To run a practice experiment, run the normal Encoding or Retrieval experiment and enter "0" for the Session Number.
 
+There are two versions of the Encoding task script
+- `EncodingBNC`: NI-DAQ only, doesn't control temperatures from the script. The sequence of temperatures must be programmed on the QST TCS II. TTL pulses are sent from the NI-DAQ to trigger the QST/Digitimer.
+- `EncodingSerial`: NI-DAQ and USB to QST, sends temperatures directly from the script.
+
 To abort in the middle of a session: `Ctrl + Alt + Backspace`
 
 ### Setting Temperatures
 
-The stimulus temperatures are set in the `EncodingSerial.startupInfo3` file. All measurements are in Celsius.
+The stimulus temperatures are set in the `EncodingSerial.startupInfo3` file. All measurements are in Celsius. This only works for the `EncodingSerial` version.
 
+### Setting COM ports for TCS
+
+You may need to edit which COM port is being used by the experiment in order to control the TCS through the `EncodingSerial` script.
+
+To get to the Serial Device Dialog,
+1. Go to Edit > Experiment > Devices
+2. Click on the Serial device, then press the `Edit...` button
+3. Edit the `COM port` to match the port number assigned to the QST TCS
+4. Leave `Bits per second` as 115200, `Data Bits` as 8, `Parity` as None, and `Stop Bits` as 1
+
+See the following:
+- [Serial Device](https://support.pstnet.com/hc/en-us/articles/229359687-DEVICE-Serial-Device-17355-)
+- [How do I verify the port number?](https://support.pstnet.com/hc/en-us/articles/115000899908)
+- [Programming reference](https://pstnet.com/ecr/#t=E-Objects/SerialDevice-Object.htm)
 
 ## Equipment
 
