@@ -12,19 +12,11 @@ There are two versions of the Encoding task script
 
 To abort in the middle of a session: `Ctrl + Alt + Backspace`
 
-### Setting Temperatures
+### Session/Subject Settings
 
 The stimulus temperatures are set in the `EncodingSerial.startupInfo3` file. All measurements are in Celsius. This only works for the `EncodingSerial` version.
 
-### Setting COM ports for TCS
-
-You may need to edit which COM port is being used by the experiment in order to control the TCS through the `EncodingSerial` script.
-
-To get to the Serial Device Dialog,
-1. Go to Edit > Experiment > Devices
-2. Click on the Serial device, then press the `Edit...` button
-3. Edit the `COM port` to match the port number assigned to the QST TCS
-4. Leave `Bits per second` as 115200, `Data Bits` as 8, `Parity` as None, and `Stop Bits` as 1
+Please also ensure the correct COM port is chosen in the `EncodingSerial.startupInfo3` file, under `Serial.CommPort`. You can check this using CoolTerm.
 
 See the following:
 - [CoolTerm](https://freeware.the-meiers.org/): lets you find the COM port #
