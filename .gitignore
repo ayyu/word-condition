@@ -1,0 +1,8 @@
+*.ini
+*.edat3
+*Retrieval-*-*.txt
+*Encoding-*-*.txt
+*.wndpos
+advisor.xsl
+~*.xls*
+*ExperimentAdvisorReport.xml

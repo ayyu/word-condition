@@ -27,6 +27,7 @@ To get to the Serial Device Dialog,
 4. Leave `Bits per second` as 115200, `Data Bits` as 8, `Parity` as None, and `Stop Bits` as 1
 
 See the following:
+- [CoolTerm](https://freeware.the-meiers.org/): lets you find the COM port #
 - [Serial Device](https://support.pstnet.com/hc/en-us/articles/229359687-DEVICE-Serial-Device-17355-)
 - [How do I verify the port number?](https://support.pstnet.com/hc/en-us/articles/115000899908)
 - [Programming reference](https://pstnet.com/ecr/#t=E-Objects/SerialDevice-Object.htm)
